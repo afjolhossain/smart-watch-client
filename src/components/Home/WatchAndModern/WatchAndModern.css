@@ -1,0 +1,11 @@
+h1 {
+  padding-left: 8px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  color: brown;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 22px;
+}

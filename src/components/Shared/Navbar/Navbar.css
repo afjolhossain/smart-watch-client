@@ -1,0 +1,22 @@
+* {
+  font-family: serif;
+}
+.bg {
+  background-color: #e66465;
+}
+.btn-logOut {
+  font-size: 20px;
+}
+
+.user-name {
+  color: black;
+  font-weight: bolder;
+}
+.allorder-btn {
+  width: 400px;
+  font-size: 20px;
+}
+.allorder-btn:hover {
+  color: rgb(95, 159, 95);
+  transition: 1s;
+}

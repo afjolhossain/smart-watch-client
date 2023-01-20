@@ -1,0 +1,14 @@
+.order-btn {
+  background: linear-gradient(
+    179.6deg,
+    rgba(0, 19, 26, 1) -4.9%,
+    rgba(0, 77, 105, 1) 108.4%
+  );
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.order-btn:hover {
+  background: rgb(87, 14, 25);
+  transition-duration: 1s;
+}

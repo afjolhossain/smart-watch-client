@@ -1,0 +1,46 @@
+* {
+  font-family: serif;
+}
+.bg-footer {
+  background: linear-gradient(#9198e5, #e66465);
+}
+.bg-footer h1 {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.bg-footer h1:hover {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(140, 34, 71);
+  transition: all 1s;
+}
+.bg-footer p {
+  font-size: 18px;
+}
+
+.hover {
+  color: white;
+  transition-property: "width";
+  transition-duration: 1s;
+}
+.hover:hover {
+  color: rgb(10, 17, 77);
+  margin-left: 10px;
+}
+.link-icon {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(#404369, #4f6d58);
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.link-icon:hover {
+  background: rgb(129, 62, 212);
+  transition-duration: 1s;
+}
+i {
+  margin-top: 10px;
+  font-size: 20px;
+}
