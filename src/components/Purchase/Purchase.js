@@ -26,7 +26,7 @@ const Purchase = () => {
       phone,
       comment,
     };
-    fetch("http://localhost:5000 /orders", {
+    fetch("https://smart-watch-servers.onrender.com /orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

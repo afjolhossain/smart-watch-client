@@ -19,7 +19,7 @@ const AddNewItems = () => {
       suplierName,
     };
 
-    fetch("http://localhost:5000 /services", {
+    fetch("https://smart-watch-servers.onrender.com /services", {
       method: "POST",
       headers: {
         "content-type": "application/json",

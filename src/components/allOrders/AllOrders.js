@@ -6,7 +6,7 @@ const AllOrders = ({ order, handleDeleteButton }) => {
   const [servicesId, setServicesId] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000 /services/${services}`)
+    fetch(`https://smart-watch-servers.onrender.com /services/${services}`)
       .then((res) => res.json())
       .then((data) => setServicesId(data));
   }, [services]);
