@@ -19,7 +19,7 @@ const AddNewItems = () => {
       suplierName,
     };
 
-    fetch("http://localhost:5000/services", {
+    fetch("http://localhost:5000 /services", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -26,7 +26,7 @@ const Purchase = () => {
       phone,
       comment,
     };
-    fetch("http://localhost:5000/orders", {
+    fetch("http://localhost:5000 /orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

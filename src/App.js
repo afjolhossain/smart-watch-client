@@ -42,7 +42,7 @@ function App() {
           path="/purchase/:id"
           element={<Purchase />}
           loader={({ params }) =>
-            fetch(`http://localhost:5000/services/${params.id}`)
+            fetch(`http://localhost:5000 /services/${params.id}`)
           }
         ></Route>
       </Routes>
