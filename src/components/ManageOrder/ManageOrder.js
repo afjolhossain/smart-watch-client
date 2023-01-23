@@ -7,9 +7,7 @@ const ManageOrder = () => {
   const [orders, setOrder] = useState([]);
 
   useEffect(() => {
-    fetch(
-      `https://smart-watch-servers.onrender.com /orders?email=${user.email}`
-    )
+    fetch(`http://localhost:5000/orders?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, [user?.email]);
@@ -19,7 +17,7 @@ const ManageOrder = () => {
       "Are you sure? You want to delete this order"
     );
     if (proceed) {
-      fetch(`https://smart-watch-servers.onrender.com /orders/${id}`, {
+      fetch(`http://localhost:5000/orders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -35,7 +33,7 @@ const ManageOrder = () => {
   };
 
   return (
-    <div>
+    <div className="mb-10">
       <p className="text-center py-6">YOUR ALL ORDER</p>
       <table className="table-fixed m-auto md:w-11/12 sm:w-8/12 ">
         <thead>

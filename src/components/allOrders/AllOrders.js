@@ -6,13 +6,13 @@ const AllOrders = ({ order, handleDeleteButton }) => {
   const [servicesId, setServicesId] = useState({});
 
   useEffect(() => {
-    fetch(`https://smart-watch-servers.onrender.com /services/${services}`)
+    fetch(`http://localhost:5000/services/${services}`)
       .then((res) => res.json())
       .then((data) => setServicesId(data));
   }, [services]);
 
   return (
-    <tr className=" text-center bg-red-200 ">
+    <tr className=" text-center bg-red-200">
       <td>
         <img className="w-3/12 mx-auto" src={servicesId.pictureLink} alt="" />
       </td>

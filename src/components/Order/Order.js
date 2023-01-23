@@ -6,7 +6,7 @@ const Order = () => {
   const { id } = useParams();
   const [service, setServics] = useState({});
   useEffect(() => {
-    const url = `https://smart-watch-servers.onrender.com/services/${id}`;
+    const url = `http://localhost:5000/services/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setServics(data));

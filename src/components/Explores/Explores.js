@@ -6,7 +6,7 @@ const Explores = () => {
   const [explores, setExplore] = useState([]);
 
   useEffect(() => {
-    fetch("https://smart-watch-servers.onrender.com/services")
+    fetch("https://smart-watch-server.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setExplore(data));
   }, []);

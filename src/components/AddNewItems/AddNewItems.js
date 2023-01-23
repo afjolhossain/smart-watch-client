@@ -19,7 +19,7 @@ const AddNewItems = () => {
       suplierName,
     };
 
-    fetch("https://smart-watch-servers.onrender.com /services", {
+    fetch("http://localhost:5000/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -36,7 +36,7 @@ const AddNewItems = () => {
   };
 
   return (
-    <div className="NewItemContainer">
+    <div className="NewItemContainer mb-10">
       <h1 className="text-center text-4xl mt-10">Add A New Items</h1>
       <form onSubmit={handleAddservices} className="from ">
         <input type="text" name="productName" placeholder="Product Name" />

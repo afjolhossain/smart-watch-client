@@ -42,9 +42,7 @@ function App() {
           path="/purchase/:id"
           element={<Purchase />}
           loader={({ params }) =>
-            fetch(
-              `https://smart-watch-servers.onrender.com /services/${params.id}`
-            )
+            fetch(`http://localhost:5000 /services/${params.id}`)
           }
         ></Route>
       </Routes>
