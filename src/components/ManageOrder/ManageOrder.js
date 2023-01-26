@@ -7,7 +7,9 @@ const ManageOrder = () => {
   const [orders, setOrder] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?email=${user.email}`)
+    fetch(
+      `https://smart-watch-website-server.vercel.app/orders?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, [user?.email]);
@@ -17,7 +19,7 @@ const ManageOrder = () => {
       "Are you sure? You want to delete this order"
     );
     if (proceed) {
-      fetch(`http://localhost:5000/orders/${id}`, {
+      fetch(`https://smart-watch-website-server.vercel.app/orders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

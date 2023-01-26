@@ -42,7 +42,9 @@ function App() {
           path="/purchase/:id"
           element={<Purchase />}
           loader={({ params }) =>
-            fetch(`http://localhost:5000 /services/${params.id}`)
+            fetch(
+              `https://smart-watch-website-server.vercel.app/services/${params.id}`
+            )
           }
         ></Route>
       </Routes>

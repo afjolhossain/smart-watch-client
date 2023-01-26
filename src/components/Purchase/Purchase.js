@@ -26,7 +26,7 @@ const Purchase = () => {
       phone,
       comment,
     };
-    fetch("http://localhost:5000/orders", {
+    fetch("https://smart-watch-website-server.vercel.app/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

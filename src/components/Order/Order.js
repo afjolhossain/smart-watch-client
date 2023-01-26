@@ -6,7 +6,7 @@ const Order = () => {
   const { id } = useParams();
   const [service, setServics] = useState({});
   useEffect(() => {
-    const url = `http://localhost:5000/services/${id}`;
+    const url = `https://smart-watch-website-server.vercel.app/services/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setServics(data));
