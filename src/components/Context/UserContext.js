@@ -30,14 +30,9 @@ const UserContext = ({ children }) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
-  // user LogOut
-  const logOut = () => {
-    setLoading(true);
-    signOut(auth);
-  };
-
   // google sign in user
   const signInGoogle = () => {
+    setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
   // updateProifile:
@@ -55,6 +50,12 @@ const UserContext = ({ children }) => {
       unsubscribe();
     };
   }, []);
+
+  // user LogOut
+  const logOut = () => {
+    setLoading(true);
+    signOut(auth);
+  };
 
   const authInfo = {
     createUser,

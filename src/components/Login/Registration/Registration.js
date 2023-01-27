@@ -30,7 +30,7 @@ const Registration = () => {
       .catch((error) => {
         console.error(error);
       });
-    navigate("/login");
+    navigate("/");
     if (password.length < 6) {
       setError("password should be  six characters or more");
       return;
@@ -79,7 +79,7 @@ const Registration = () => {
           </h2>
           {!loading && (
             <form onSubmit={handleRegister}>
-              <p>Email</p>
+              <p>Name</p>
               <input
                 type="text"
                 name="name"
@@ -100,14 +100,14 @@ const Registration = () => {
                 type="password"
                 name="password"
                 id=""
-                placeholder="Entre Your Name"
+                placeholder="Entre Your Passwoard "
               />
               <p>Re-Password</p>
               <input
                 type="password"
                 name="confirm"
                 id=""
-                placeholder="Enter Your Password"
+                placeholder="Enter Your Re- Password"
               />
               <button type="submit" className="register-btn">
                 Register
