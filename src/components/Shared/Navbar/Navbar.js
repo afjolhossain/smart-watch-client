@@ -76,7 +76,9 @@ const Navbar = () => {
           <NavLink to="/addNewItems" className="allorder-btn">
             ADD-ITEMS
           </NavLink>
-          <span className="user-name text-2xl w-3/12">{user?.displayName}</span>
+          <span className="user-name text-2xl w-4/12 ">
+            {user?.displayName}
+          </span>
           <button
             className=" btn-logOut text-center w-3/12 mr-5"
             onClick={handleLogOut}
